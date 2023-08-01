@@ -22,15 +22,18 @@ class HomeScreen extends StatelessWidget {
               const LocationAddressBar(),
               const SizedBox(height: 20.0),
               const DashboardCard(),
-              Padding(
+              Container(
                 padding: const EdgeInsets.only(
-                    top: 15.0, left: 24.0, right: 24.0, bottom: 5.0),
-                child: Align(
-                  alignment: Alignment.centerLeft,
-                  child: Text(
-                    'Quick Links',
-                    style: mFontStyle.copyWith(fontWeight: FontWeight.bold),
-                  ),
+                  top: 15.0,
+                  left: 24.0,
+                  right: 24.0,
+                  bottom: 5.0,
+                ),
+                color: Colors.transparent,
+                alignment: Alignment.centerLeft,
+                child: Text(
+                  'Quick Links',
+                  style: mFontStyle.copyWith(fontWeight: FontWeight.bold),
                 ),
               ),
               const QuickLinksSection(),
